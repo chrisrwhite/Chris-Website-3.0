@@ -1,0 +1,325 @@
+
+<!-- This is html, i learned the basics of html-->
+<html>
+	<head>
+		<body>
+			<title> Chris's Website </title>
+			<link href ="../css/main.css" type = "text/css" rel = "stylesheet">
+			</head>
+			<section>
+				<div id = "main">
+					<!-- user defined tag-->
+					<h1>Welcome to Chris's Website</h1>
+					<img height =  "120" width="800" src ="../img/banner.jpg" align = "center" />
+					<!-- insert banner image-->
+				</section>
+				<section>
+					<div id="wrap">
+						<ul class="navbar">
+							<li>
+								<a href="../index.html">Home</a>
+							</li>
+							<li>
+								<a href="#">Engineering</a>
+								<ul>
+									<li>
+										<a href="#">Project 1</a>
+									</li>
+									<li>
+										<a href="#">Project 2</a>
+									</li>
+									<li>
+										<a href="#">Project 3</a>
+									</li>
+								</ul>         
+							</li>
+							<li>
+								<a href="#">Programming</a>
+								<ul>
+									<li>
+										<a href="#">Project 1</a>
+									</li>
+									<li>
+										<a href="#">Project 2</a>
+									</li>
+									<li>
+										<a href="#">Project 3</a>
+									</li>
+								</ul>         
+							</li>
+							<li>
+								<a href="#">Music</a>
+							</li>
+							<li>
+								<a href="../data/resume/resume.txt">Resume</a>
+							</li>
+							<li>
+								<a href="#">Places I've been</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<div id = "secondary" >
+					<section>
+						<!-- mini header for first blurb -->
+						<h2>Project 2:</h2>
+						<h2>Experimental Analysis of Vapor Compression Refrigeration Cycle Expansion Valves</h2>
+
+						<h3>Abstract</h3>
+						<p>Refrigeration is a cyclic process in which heat is drawn from a region of low temperature and transferred to one of higher temperature. The study of thermodynamics is essential in the design of refrigeration systems, since both the mechanical components and the working fluid have a significant effect on the performance of the overall cycle. The purpose of this experiment was to characterize the operation and performance of the Hampden Refrigeration Trainer by varying the pressure drop through 3 expansion valves in order to determine the optimal valve using R134a. This was accomplished by monitoring the temperature, pressure, and mass flow rate between components while running the system with a thermostatic expansion valve (TEV), capillary tube (CT), and hand expansion valve (HEV). Using the first law of thermodynamics, the coefficients of performance (CoP) for the ideal and actual refrigerator cycles were determined. The HEV was used to explore the effect of flow rate on CoP between 1.86&#177;0.364 and 4.77&#177;0.362 g/s resulting in a linear trend with CoP values of 3.04&#177;0.13 and 1.62&#177;0.06 respectively. Based on CoP, the HEV is the most optimal valve at flow rates below 4.77g/s, however it is not an ideal valve in residential or commercial buildings, where it would require constant maintenance. Therefore it was concluded that the TEV valve is optimal for use in commercial buildings with a CoP of 2.26&#177;0.09 due to the temperature regulating system feedback control. The CT valve is most optimal for residential refrigeration with actual CoP of 2.10&#177;0.09, since it is compact, inexpensive, and maintenance-free.</p>
+
+						<h3>Introduction and Methods</h3>
+
+						<p>In 1987, the Montreal Protocol began the worldwide phase-out of ozone-depleting refrigerants in favor of ozone-friendly refrigerants, driving refrigeration system manufacturers to develop equipment that run efficiently using these refrigerants with less favorable thermodynamic properties [1]. One of the most efficient, reliable, and inexpensive cycles is the vapor compression refrigeration (VCR) cycle (shown schematically in Figure 1), in which the refrigerant is vaporized, compressed, and condensed [2]. Unlike other refrigeration cycles, the ideal VCR cycle is not internally reversible due to the addition of the expansion valve, which makes it a realistic model for the analyzing the actual VCR cycle. The ideal cycle can be analyzed using the first law of thermodynamics, expressed as</p>
+
+						<style>
+    table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+						</style>
+
+						<table class="numbered-equation" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<i>Q</i> - <i>W</i> = <i>&#8710;U</i>
+								</td>
+								<td class="equation-number">
+            (1)
+								</td>
+							</tr>
+						</table>
+
+						<p>where <i>Q</i> is heat transfer, <i>W</i> is the work, and <i>&#8710;U</i> is the change in internal energy. It is assumed that internal energy is negligible within the system, therefore there are no changes in internal energy. The first law of thermodynamics is used to analyze the effects of the components on the working fluid even though the second law of thermodynamics states that heat flow from cold to hot temperature is impossible. The VCR cycle accomplishes this task by performing work on the vaporized refrigerant by increasing the pressure of the working fluid via compressor.</p>
+
+						<center>
+							<img width =  "235" src ="..\img\project-refridgerator-img\block.jpg"  align = "left"/>
+							<img width =  "235" src ="..\img\project-refridgerator-img\Ts.jpg">
+								<img width =  "235" src ="..\img\project-refridgerator-img\ph.jpg"  align = "right"/>
+								<p>
+									<sub>Figure 1: (a) Schematic, and (b) Temperature-Entropy and (c) Pressure-Enthalpy Diagrams for Ideal (red) and Actual (blue) VCR Cycle</sub>
+								</p>
+							</center>
+
+
+
+							<p>The ideal VCR cycle begins with saturated refrigerant vapor entering the compressor at state 1, increasing in pressure and temperature through an isentropic process in Figure 1. Using Eq. (1), compressor work is expressed as</p>
+
+							<style>
+    table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+							</style>
+
+							<table class="numbered-equation" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<i>W<sub>net,in</sub>
+										</i> = <i>m</i>(<i>h<sub>2</sub>
+										</i> - <i>h<sub>1</sub>)</i>
+									</td>
+									<td class="equation-number">
+            (2)
+									</td>
+								</tr>
+							</table>
+
+
+
+
+							<p>where <i>W<sub>net,in</sub>
+								</i>, the compressor work into the system is, <i>m</i> is the mass flow rate, and <i>h</i> is the enthalpy at each state. Upon exiting the compressor, the superheated refrigerant enters the condenser at stage 2, which releases heat to the cooler surroundings as the refrigerant is liquefied isobarically. Using Eq. (1), the heat exiting the system is expressed as</p>
+
+
+							<style>
+    table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+							</style>
+
+							<table class="numbered-equation" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<i>Q<sub>H</sub>
+										</i> = <i>m</i>(<i>h<sub>2</sub>
+										</i> - <i>h<sub>3</sub>)</i>
+									</td>
+									<td class="equation-number">
+            (3)
+									</td>
+								</tr>
+							</table>
+
+
+
+
+							<p>where <i>Q<sub>H</sub>
+								</i> is the heat transferred from the refrigerant to environment, <i>m</i> is the mass flow rate, and <i>h</i> is the enthalpy at each state. The saturated liquid refrigerant enters the expansion valve at stage 3 where it undergoes an abrupt decrease in pressure isenthalpically. Since the refrigerant is goes from a large diameter pipe to the very small diameter of the expansion valve a pressure gradient is established, which drives the flow. During the pressure decrease, an adiabatic flash evaporation occurs and vaporizes some of the refrigerant resulting in an auto-refrigerated mixture [2]. The mixture enters the evaporator at stage 4, which transfers heat into the refrigerant from the warm air of the space being refrigerated isobarically and results in a saturated vapor. Using Eq. (1), the heat entering the refrigeration system is expressed as</p>
+
+							<style>
+    table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+    td.equation-number { text-align:right; width:2em; }
+							</style>
+
+							<table class="numbered-equation" cellpadding="0" cellspacing="0">
+								<tr>
+									<td>
+										<i>Q<sub>L</sub>
+										</i> = <i>m</i>(<i>h<sub>1</sub>
+										</i> - <i>h<sub>4</sub>)</i>
+									</td>
+									<td class="equation-number">
+            (4)
+									</td>
+								</tr>
+							</table>
+
+
+							<p>where <i>Q<sub>L</sub>
+								</i> is the heat transferred into the refridgerant from the environment, <i>m</i> is the mass flow rate, and <i>h</i> is the enthalpy at each state. The refrigerant leaves the evaporator as a saturated vapor and re-enters the compressor, completing the cycle. The performance of the cycle is characterized by the CoP, which is the ratio between the desired output heat transfer and the work required to run the compressor and is expressed as</p>
+
+
+							<style>
+    td.upper_line { border-top:solid 1px black; }
+    table.fraction { text-align: center; vertical-align: middle;
+        margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+							</style>
+
+							<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+									<td rowspan="2" nowrap="nowrap">
+										<i>COP<sub>R</sub>
+										</i> =  
+									</td>
+									<td nowrap="nowrap">
+										<i>Q<sub>L</sub>
+										</i>
+									</td>
+								</tr>
+								<tr>
+									<td class="upper_line">
+										<i>W<sub>net,in</sub>
+										</i>
+									</td>
+								</tr>
+							</table>
+
+
+							<p>where <i>Q<sub>L</sub>
+								</i> and <i>W<sub>net,in</sub>
+								</i> are determined using Eq. (2) & Eq. (3) respectively. CoP is significantly influenced by the mass flow rate of the refrigerant, which is controlled by the throttling valve. The TEV, CT, and HEV are unique designs that control the flow rate with different physical mechanisms resulting in dissimilar CoP values due to the variation in pressure drops.</p>
+
+							<p>The TEV contains a temperature sensitive bulb filled with a gas of similar properties to the refrigerant and controls mass flow rate based on the temperature of the refrigerant monitored at the exit of the evaporator. The gas works against the force of a spring as the pressure increases or decreases to enable or restrict the mass flow rate through the valve until the system reaches steady state operation.</p>
+
+							<p>The CT is a non-adjustable constant area expansion device that comprises of a long tube with small inner diameter and is coiled several times to reduce space. It induces a pressure drop due to the frictional forces between the refrigerant and the inner tube wall. The pressure drop attained depends on diameter and length accompanied by large drop in temperature</p>
+
+							<p>The HEV is designed as a manually operated throttling device that controls flow into the evaporator through the seat via the height of the needle. The height is controlled by the adjustment screw, which is manually operated by the user, who specifies the mass flow rate of the cycle.</p>
+
+							<p>In the current study, the actual CoP was experimentally determined for 3 throttling valves and compared to the theoretical CoP in order to determine the optimal valve for the VCR cycle.</p>
+
+							<p>The experiments were performed on the Hampden Refrigeration Trainer, by running the cycle in forward mode while monitoring temperature, pressure, and mass flow rate at specific points in the cycle. The actual CoP was experimentally determined for the TEV, CT, and HEV control by using the first law of thermodynamics. The locations of the instrumentation are displayed on a schematic of the actual VCR cycle in Figure 2.</p>
+
+							<center>
+								<img height =  "500" src ="..\img\project-refridgerator-img\instrumentation.jpg"  align = "middle"/>
+							</center>
+							<p>
+								<sub>Figure 2: Hampden Refrigeration Trainer Schematic with Instrumentation Locations: Type-T Thermocouples, Sho-Rate "50" Model 1350E Flowmeter, and Pressure Transducers </sub>
+							</p>
+
+							<h3>Results and Discussion</h3>
+
+							<p>Three experimental set ups were considered: (1) Cooling (FWD) mode with TEV control, (2) Cooling (FWD) mode with CT control, and (3) Cooling (FWD) mode with HEV control at mass flow rates between 1.86 – 4.77 g/s.</p>
+
+							<p>For the TEV control arrangement, the system was prepared according to the startup procedure in the Operating Instructions at a laboratory temperature of 24&deg;C [3]. Temperature, pressure, and mass flow rate were measured at the locations displayed in Figure 2. Each measurement was recorded 3 times in intervals of 5 minutes in order to confirm that the system had reached steady state as gauge fluxuations were minimal. At a mass flow rate of 3.62&#177;0.363 g/s, the actual CoP for TEV control was 2.26&#177;0.09 determined using Eq. (5) displayed in Figure 3.</p>
+
+							<p>The effects of CT control was set up by opening the CTV and closing the TEV-1 in Figure 2. Temperature, pressure, and mass flow rate were measured 3 times at the locations displayed in Figure 2. At a mass flow rate of 4.31&#177;0.362 g/s, the actual CoP for CT control was 2.10&#177;0.09 determined using Eq. (5) displayed in Figure 3.</p>
+
+							<p>HEV control was established by slightly cracking the HEV and closing the CTV and the system was tested by adjusting the HEV to produce flow rates of 1.86&#177;0.364, 3.39&#177;0.363, and 4.77&#177;0.362 g/s. Temperature, pressure, and mass flow rate were measured at the locations displayed in Figure 2 at each flow rate. The actual HEV CoP values for each flow rate were 3.04&#177;0.13, 2.63&#177;0.11, and 1.62&#177;0.06 respectfully determined using Eq. (5) displayed in Figure 3.</p>
+
+							<center>
+								<img width =  "360" src ="..\img\project-refridgerator-img\PEdia.jpg"  align = "left"/>
+								<img width =  "370" src ="..\img\project-refridgerator-img\TEdia.jpg"  align = "right"/>
+
+							</center>
+							<br>
+								<br>
+									<br>
+										<br>
+											<br>
+												<br>
+													<br>
+														<br>
+															<br>
+																<br>
+																	<br>
+																		<br>
+																			<br>
+																				<br>
+																					<br>
+																						<br>
+																							<p>
+																								<sub>Figure 3: (a) Pressure-Enthalpy and (b) Temperature-Entropy Diagrams for Ideal (red) and Actual (blue) VCR Cycle Processed in MATLAB with CoolProps</sub>
+																							</p>
+
+																							<p>While the VCR cycle is a realistic model of the actual cycle, there are differences between 3 of the stages due irreverabilities occurring throughout the refrigeration system. The two significant sources of irreversabilites are piping losses and unwanted heat transfer with the environment, the effects of which are displayed in Figure 3. Piping losses have a minimal effect on the cycle occurring in the condenser (stages 3 to 4) and the evaporator (stages 7 to 8.) They are a result of fluid friction against the inner surface of the piping and components under the no slip boundary condition. Within both the condenser and evaporator, heat lost and gained increases with respect to mass flow as shown in Table 1. The most significant source of irreversibility occurs in the compression process due to entropy generation from friction between the vapor and the interior of the pump. Unlike the ideal isentropic process, the actual VCR cycle compressor significantly increases temperature of the vapor resulting in entropy generation due to the friction and heat transfer. In Table 1, compressor efficiency increased with mass flow rate, with the exception of the HEV at 4.77g/s, which was due to the high vapor mass flow forcing the compressor to apply significantly more work resulting in a low efficiency in comparison to the ideal compression process.</p>
+
+																							<center>
+																								<p>
+																									<sub>Table 1: VCR Mass Flow Rate, Heat Lost, Heat Gained, and Compressor Efficiency for Each Expansion Valve</sub>
+																								</p>
+																								<img width =  "500" src ="..\img\project-refridgerator-img\table.jpg" />
+
+
+																							</center>
+
+																							<p>Furthermore in the ideal cycle, refrigerant leaves the evaporator as a saturated vapor and enters the compressor as a saturated vapor, whereas in the actual cycle, the refrigerant may degrade in quality, resulting in condensation entering and damaging the compressor. Therefore actual refrigeration systems add a few extra degrees of super heat to the refrigerant in the evaporator in order to superheat the refrigerant vapor to ensure that the refrigerant is fully vaporized throughout the compression process [2]. In addition to the superheating process, a component called a suction accumulator, located between stages 8 and 1, ensures that no condensed liquid enters the compressor by separating the condensed liquid from the vapor. Accumulators have a metering ejector device that vaporizes the liquid built up in a reservoir.</p>
+
+																							<p>In addition, refrigerant enters the expansion valve as a saturated liquid in the ideal system after leaving the condenser, however this may not be the case in the actual cycle due to the pressure drop between stages 3 and 4 due piping losses from friction resulting in left over vapor. It is undesirable to have a mixture entering the throttling valve, because of the lower entry enthalpy, therefore the refrigerant passes through the liquid receiver at stages 4 to 5, ensuring that only a saturated liquid enters the valve. It serves as a seal against the entrance of vapor refrigerant entering the liquid line by accumulating liquid refrigerant and ensures the availability of stored refrigerant until the system requires it.</p>
+
+																							<p>Irreverabilities have a negative effect on refrigerator performance and therefore the actual CoP is less than the ideal CoP. The primary source of this decrease is due to the entropy generation within the compressor in the actual cycle. It was observed that ideal CoP increases with respect to mass flow rate according to Eq. (5), since the refrigerant enters the compressor as soon as it reaches the saturated vapor line, resulting in a small heat lost region in Figure 3. When compared to the actual cycle which has a much greater heat lost region, CoP decreases because the heat transfer is similar to the value of the compressor work based on Eq. (5). While the ideal and actual CoP values may behave differently, it is a result of the entropy generation within the compressor that is not accounted for in isentropic process in the ideal cycle. Despite the irreversibilities occurring in the compressor, the ideal VCR cycle is a valid model for the actual cycle due since error bars of the actual CoP values are insignificant in Figure 4.</p>
+
+																							<center>
+
+																								<img width =  "500" src ="..\img\project-refridgerator-img\COP.jpg" />
+
+																								<p>
+																									<sub>Figure 4: Actual and Ideal VCR Cycle CoP for Each Expansion Valve</sub>
+																								</p>
+																							</center>
+
+
+
+																							<p>According to Figure 4, HEV control at a flow rate of 1.86 g/s results in a high CoP, however the system may need to run through multiple cycles to achieve the same heat transfer produced at higher mass flow rates due to the low compressor efficiency in Table 1. At high flow rates of 4.77 g/s, HEV control provides a high heat transfer, however the compressor efficiency diminishes due to the high amount of work required to operate the compressor. The results from the 3 HEV experiments displayed a decreasing linear relationship between the actual CoP and mass flow rate. As mass flow rate decreases, cooling power decreases, requiring less compressor work thus increasing CoP. Lower compressor work is the result of the refrigerant entering the compressor at a higher super-heated vapor since the refrigerant enters the vaporizer at a very small mass flow rate. This increases the enthalpy and temperature of the superheated vapor at the beginning of the compression making the compressor work less due to the small difference in enthalpies using Eq. (2). The low mass flow rate means that the refrigerant is capable of absorbing heat at the evaporator and dispersing heat at the condenser occurs relatively easily and but inefficiently. Higher mass flow rate results in not all of the refrigerant absorbing heat in the evaporator quickly, and results in higher efficiency until 4.77 g/s.</p>
+
+																							<p>HEV1 resulted in compressor entrance and exit temperatures of 299.3 K and 369.8 K with expansion tube entry and exit temperatures of 314.8 K and 269.2 K and was significantly different from the behavior found in the TEV and CT. HEV2 displayed compressor entrance and exit temperatures of 297K and 370.4K and behaved similarly to the TEV. HEV3 had compressor entrance and exit temperatures of 283.7K and 379.8K and behaved similarly to the CT. While the HEV achieved the highest CoP, it simply is not suitable in a situation where the equipment would not be continuously adjusted for the optimal CoP based on environment temperatures, which would affect the heat transfer rates in the evaporator and condenser.</p>
+																							<p>TEV control essentially forces the system to operate at equilibrium based on the refrigerant temperature at the exit of the evaporator. It had compressor entrance and exit temperatures of 290.4 K and 369.8K and resulted in a CoP that is slightly higher than that of CP control. This is due to the mechanics of TEV control, because flow rate is controlled through a mechanical feedback loop based on the refrigerant temperature at the evaporator exit. Therefore the valve adjusts to achieve the steady state mass flow rate of the refrigerant based on the temperature of the system. The TEV is an expensive, self-regulating expansion valve that is most suitable in a commercial environment with heavy duty HVAC systems. It has a compressor efficiency of 0.292&#177;0.0154 based on Table 1.</p>
+																							<p>CT control forces the system to operate based on the geometry of the tube and results in a compressor entrance temperature of 282 K due to a decrease in temperature through the suction accumulator. CT control had a compressor exit temperature of 362K. The decrease in temperature was due to the heat transfer with the environment due to the large surface area of the coiled tubes. The CT is a cheap, compact, and reliable expansion valve that is most suitable in a residential environment with small refrigeration systems. It has a higher compressor efficiency than TEV control of 0.453&#177;0.0165 based on Table 1.</p>
+
+																							<h3>Conclusions</h3>
+
+
+																							<p>The purpose of this experiment was characterize the performance of the refrigeration system by determining the effect of TEV, CT, and HEV control on the VCR cycle. Though the first law of thermodynamics, the CoP was determined for the actual and ideal cycles for each expansion valve. The CoP error bars for the expansion valves in the actual cycle were minimal and therefore the VCR ideal model was accurate for modeling the actual cycle, even though the ideal model is different during the isentropic compression process. Based on the experiments it was determined that HEV control was the optimal control device due to its high CoP, but low compressor efficiency at low flow rates. Based on the HEV experiments, it was determined that TEV control was optimal for commercial refrigeration with a CoP of 2.26&#177;0.09 and compressor efficiency of 0.292&#177;0.0154. Whereas due to the compact size and low cost of the CT, it was best suited for use in residential refrigeration systems with a CoP of 2.10&#177;0.09 and compressor efficiency of 0.453&#177;0.0165. </p>
+
+																							<h3>References</h3>
+																							<li>
+																								<p>http://www.epa.gov/ozone/title6/phaseout/22phaseout.html</p>
+																							</li>
+
+																							<li>
+																								<p>Ҫengel, T.A. and Boles, M.A. (2002) Thermodynamics: An Engineering Approach, McGraw Hill, 4th Edition.</p>
+																							</li>
+
+																							<li>
+																								<p>Rossmann, T., Sabatino, D. & Utter B. (2015). ME 475: Refrigeration System Laboratory Description. Easton, PA: Lafayette College.</p>
+																							</li>
+
+
+
+																							<center>
+																								<a href="#top">Go to top</a>
+																							</center>
+																						</section>
+																					</div>
+																				</div>
+																			</body>
+																		</html>

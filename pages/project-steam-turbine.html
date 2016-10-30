@@ -1,0 +1,443 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Chris's Website</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<section>
+	<div id = "main"><!-- user defined tag-->
+		<!--http://learn.shayhowe.com/html-css/positioning-content/ how to position and group content-->
+		<h1>Welcome to Chris's Website</h1>
+		<img height =  "120" width="800" src ="../img/banner.jpg" align = "center" /><!-- insert banner image-->
+	</section>
+	<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <!-- Menu Code Goes Here -->
+<section>
+	<div id="wrap">
+		<ul class="navbar">
+			<li>
+				<a href="../index.html">Home</a>
+			</li>
+			<li>
+				<a href="#">Engineering</a>
+				<ul>
+					<li>
+						<a href="#">Project 1</a>
+					</li>
+					<li>
+						<a href="#">Project 2</a>
+					</li>
+					<li>
+						<a href="#">Project 3</a>
+					</li>
+				</ul>         
+			</li>
+			<li>
+				<a href="#">Programming</a>
+				<ul>
+					<li>
+						<a href="#">Project 1</a>
+					</li>
+					<li>
+						<a href="#">Project 2</a>
+					</li>
+					<li>
+						<a href="#">Project 3</a>
+					</li>
+				</ul>         
+			</li>
+			<li>
+				<a href="#">Music</a>
+			</li>
+			<li>
+				<a href="../data/resume/resume.txt">Resume</a>
+			</li>
+			<li>
+				<a href="#">Places I've been</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<div id = "secondary" >
+	<section>
+		<!-- Code Goes Here. -->
+		<h2>Project 2:</h2>
+		<h2>Experimental Analysis of Steam Turbine Performance</h2>
+
+		<h3>Abstract</h3>
+
+		<p>Power plants must have sufficient capacity to supply the anticipated daily peaks in the varying aggregate electricity demand of the commercial, residential, industrial, and agricultural sectors. The majority of power is produced by electric generators driven by devices that extract kinematic energy from superheated steam as it flows from high to low regions of temperature and pressure, called steam turbines. The purpose of this experiment was to determine the optimal loading to achieve the maximum turbine efficiency of a 5 kW Carling “A Series,” single-stage, impulse type turbine. Temperature, pressure, and mass flow rate between components were measured while applying resistive loads between 20 and 100 light bulbs on the turbine output shaft via generator. This range of loadings was used to explore the effect of load on turbine efficiency, condenser efficiency, and condenser effectiveness. It was observed that the turbine efficiency had a steep positive slope at loading below the 60 bulb loading, where it began to plateau at an effectiveness of approximately 59%. The 60 bulb load is the most optimal loading as it resulted in the highest turbine efficiency of 59.9&#177;2.6% with a cycle thermal efficiency of 1.14&#177;0.57% and condenser effectiveness of 0.17&#177;0.02. The 20 bulb case had the lowest turbine efficiency of 36.7&#177;1.1%, while the 100 bulb loading resulted in a slight dip in efficiency within the plateau region of 58.8&#177;3.9%.</p>
+
+		<h3>Introduction and Methods</h3>
+
+		<p> The U.S. Energy Information Administration predicts that energy consumption will rise by 29% from 2012 to 2040, resulting in an increase from 3,826 to 4,954 billion kWh, which adds to the strain on the Earth’s depleting fossil fuel resources [1]. According to the law of conservation of energy, power plants can meet the rise in demand by increasing fuel consumption, however turbine efficiency remains unaffected. Alternatively, investing in a turbine of higher efficiency results in both environmental and economic incentives, since more energy is extracted from the fuel. Therefore turbine manufacturers test the performance of their products by applying various loadings to simulate the electricity demand. In order to analyze a protoype steam turbine, the Rankine cycle is used to represent the steam power plant process as an idealized thermodynamic cycle with no internal irreverabilies. The Rankine cycle is illustrated in Figure 1 and comprises of 4 components that can be analyzed using the steady-flow energy equation, expressed as</p>
+
+		<style>
+            		table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+            			margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+            			td.equation-number { text-align:right; width:2em; }
+		</style>
+
+		<table class="numbered-equation" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+            						(<i>q<sub>in</sub> - q <sub>out</sub>
+					</i>) -
+            					(<i>w<sub>in</sub> - w <sub>out</sub>
+					</i>)
+            				= <i>h<sub>e</sub> - h <sub>i</sub>                                      (kJ/kg)
+					</td>
+					<td class="equation-number">(1)
+					</td>
+				</tr>
+			</table>
+
+			<h6>where <i>q</i> is the heat transfer, <i>w</i> is the work, and <i>h</i> is the enthalpy at the exit and inlet of the control volume. These components can be analyzed under the assumption that they are steady-flow devices that have minimal changes in kinetic and potential energy relative to the work and negligible heat transfer.</h6>
+
+			<br>
+
+				<center>
+					<img width =  "362" src ="..\img\project-steam-turbine-img\schematic.jpg"  align = "center"/>
+				</center>
+				<center>
+					<img width =  "430" src ="..\img\project-steam-turbine-img\Ts.jpg"  align = "center"/>
+				</center>
+
+				<h4>Figure 1: (a) Schematic, and (b) Temperature-Entropy Diagram for Ideal (red) and Actual (blue) Rankine Cycle [2] replicated by White C.</h4>
+
+				<p>The ideal Rankine cycle begins at state 1 with saturated liquid steam entering the pump and work is exported to compress the liquid isentropically as illustrated in Figure 1. The compressed liquid steam enters the boiler at stage 2 and heated isobarically to a superheated vapor via combustion or nuclear reactors. The superheated vapor enters the steam turbine at stage 3 and undergoes a pressure drop isentropiccally as the steam circulates around the turbine blades producing mechanical work to rotate the output shaft attached to an electric generator. The steam exits the turbine to enter the condenser as a high quality mixture and transitions to a saturated liquid as heat is transferred to cold water. Each component of the Rankine cycle can be analyzed using Eq. (1), expressed as</p>
+
+				<table class="numbered-equation" cellpadding="0" cellspacing="0">
+					<tr>
+						<td>
+							<i>W<sub>pump,in</sub>
+							</i> = <i>h<sub>2</sub> - h <sub>1</sub>                                      (kJ/kg)
+							</td>
+							<td class="equation-number">(2)
+							</td>
+						</tr>
+					</table>			
+					<table class="numbered-equation" cellpadding="0" cellspacing="0">
+						<tr>
+							<td>
+								<i>q<sub>in</sub>
+								</i> = <i>h<sub>3</sub> - h <sub>2</sub>                                      (kJ/kg)
+								</td>
+								<td class="equation-number">(3)
+								</td>
+							</tr>
+						</table>			
+						<table class="numbered-equation" cellpadding="0" cellspacing="0">
+							<tr>
+								<td>
+									<i>W<sub>turb,out</sub>
+									</i> = <i>h<sub>3</sub> - h <sub>4</sub>                                      (kJ/kg)
+									</td>
+									<td class="equation-number">(4)
+									</td>
+								</tr>
+
+								<table class="numbered-equation" cellpadding="0" cellspacing="0">
+									<tr>
+										<td>
+											<i>q<sub>out</sub>
+											</i> = <i>h<sub>4</sub> - h <sub>1</sub>                                      (kJ/kg)
+											</td>
+											<td class="equation-number">(5)
+											</td>
+										</tr>
+									</table>
+
+									<h6>assuming no heat transfer during the work processes and no work during the heat transfer processes. While the ideal Rankine cycle is useful for understanding the thermodynamics behind the process, the actual steam turbine cycle has deviates from the ideal due to irreversabilities in each component as illustrated in the T-s diagram in Figure 1. Irreversabilities are present within any mechanical device and results in a decrease in the performance and can be accessed by determining the effectiveness, which is the ratio of the power in to the power out. In the experimental set up, there are irreverabilities within the steam turbine and the generator which results in efficiencies for both devices. The mechanical efficiency of the turbine is the ratio between the output of the shaft and the power of the working fluid. The electrical efficiency of the generator is the ratio between the electrical power output and the work of the shaft, based on a calibration curve for the efficiency in respect to percentage of full loading[3]. The efficiencies of the turbine and the generator are expressed as</h6>
+
+									<style>
+td.upper_line { border-top:solid 1px black; }
+table.fraction { text-align: center; vertical-align: middle;
+    margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+td.equation-number { text-align:right; width:2em; }
+									</style>
+
+									<table class="display" cellpadding="0" cellspacing="0" width="100%">
+										<tr>
+											<td class="blank">&nbsp;</td>
+											<td class="expression">
+												<!--start of custom code-->
+												<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+													<tr>
+
+														<td rowspan="2" nowrap="nowrap">
+															<i>&#951; <sub>T</sub>
+															</i>  = &nbsp; 
+														</td>
+														<td nowrap="nowrap">
+															<i>w<sub>s</sub>
+															</i>
+														</td>
+													</tr>
+													<tr>
+														<td class="upper_line">
+															<i>w<sub>f</sub>
+															</i>
+														</td>
+
+													</tr>
+
+													<!--End of custom code-->	
+												</table>
+
+											</td>
+										</td>
+										<td class="eqnnumber" align="right">
+		(6)
+										</td>
+									</tr>
+								</table>
+
+								<table class="display" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										<td class="blank">&nbsp;</td>
+										<td class="expression">
+											<!--start of custom code-->
+											<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+												<tr>
+													<td rowspan="2" nowrap="nowrap">
+														<i>&#951; <sub>G</sub>
+														</i>  = &nbsp; 
+													</td>
+													<td nowrap="nowrap">
+														<i>I</i> &#215; <i>V</i>
+													</td>
+												</tr>
+												<tr>
+													<td class="upper_line">
+														<i>w<sub>s</sub>
+														</i>
+													</td>
+												</tr>
+												<!--End of custom code-->	
+											</table>
+										</td>
+									</td>
+									<td class="eqnnumber" align="right">
+		(7)
+									</td>
+								</tr>
+							</table>
+
+							<h6>where <i>&#951; <sub>T</sub>
+								</i> and <i>&#951; <sub>G</sub>
+								</i> are the turbine and generator efficiencies,<i>w<sub>s</sub>
+								</i> and <i>w<sub>f</sub>
+								</i> are the actual work of the shaft and working fluid, <i>I</i> and <i>V</i> are the current and voltage difference from the generator respectively. Since the power of the shaft is unknown, it can be disregarded by combining Eqs. (5 & 6) and therefore turbine efficiency is defined as</h6>
+
+							<table class="display" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td class="blank">&nbsp;</td>
+									<td class="expression">
+										<!--start of custom code-->
+										<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+											<tr>
+												<td rowspan="2" nowrap="nowrap">
+													<i>&#951; <sub>T</sub>
+													</i>  = &nbsp; 
+												</td>
+												<td nowrap="nowrap">
+													<i>I</i> &#215; <i>V</i>
+												</td>
+											</tr>
+											<tr>
+												<td class="upper_line">
+													<i>w<sub>f</sub>
+													</i> &#215; <i>&#951;<sub>G</sub>
+													</i>
+												</td>
+											</tr>
+											<!--End of custom code-->	
+										</table>
+									</td>
+								</td>
+								<td class="eqnnumber" align="right">
+		(8)
+								</td>
+							</tr>
+						</table>
+
+						<p>Based conservation of energy, the cycle thermal performance of the entire cycle is characterized by the thermal efficiency, the ratio between the net power done and the heat supplied by the boiler, namely,</p>
+
+						<table class="display" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<td class="blank">&nbsp;</td>
+								<td class="expression">
+									<!--start of custom code-->
+									<table class="fraction" align="right" cellpadding="0" cellspacing="0">
+										<tr>
+											<td rowspan="2" nowrap="nowrap">
+												<i>&#951; <sub>th</sub>
+												</i>  =  &nbsp;
+											</td>
+											<td nowrap="nowrap">
+												<i>w<sub>net</sub>
+												</i>
+											</td>
+										</tr>
+										<tr>
+											<td class="upper_line">
+												<i>q<sub>in</sub>
+												</i>
+											</td>
+										</tr>
+										<!--End of custom code-->	
+									</table>
+								</td>
+							</td>
+							<td class="blank">&nbsp;</td>
+							<td class="expression">
+								<!--start of custom code-->
+								<table class="fraction" align="left" cellpadding="0" cellspacing="0">
+									<tr>
+										<td rowspan="2" nowrap="nowrap">
+					=  &nbsp;
+										</td>
+										<td nowrap="nowrap">
+											<i>w<sub>turb,out</sub>
+											</i> - <i>w<sub>pump</sub>
+											</i>
+										</td>
+									</tr>
+									<tr>
+										<td class="upper_line">
+											<i>q<sub>in</sub>
+											</i>
+										</td>
+									</tr>
+									<!--End of custom code-->	
+								</table>
+							</td>
+						</td>
+						<td class="eqnnumber" align="right">
+		(9)
+						</td>
+					</tr>
+				</table>
+
+				<p>Condenser effectiveness is a function of the NTU, heat capacity rate ratio, and the heat exchanger flow arrangement and is defined as the ratio of actual heat transfer rate for a heat exchanger to the maximum possible heat transfer rate and can be written as</p>
+
+				<table class="display" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="blank">&nbsp;</td>
+						<td class="expression">
+							<!--start of custom code-->
+							<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+								<tr>
+
+									<td rowspan="2" nowrap="nowrap">
+						&epsilon;  = &nbsp; 
+									</td>
+									<td nowrap="nowrap">
+										<i>q</i>
+									</td>
+								</tr>
+								<tr>
+									<td class="upper_line">
+										<i>q<sub>max</sub>
+										</i>
+									</td>
+								</tr>
+								<!--End of custom code-->	
+							</table>
+						</td>
+					</td>
+					<td class="eqnnumber" align="right">
+		(10)
+					</td>
+				</tr>
+			</table>
+
+			<h6>where &epsilon; is the condenser effectiveness, <i>q</i> is the actual heat transfer rate, and <i>q<sub>max</sub>
+				</i> is the maximum heat transfer rate.</h6>
+
+			<p>In the current study, turbine efficiency, cycle efficiency, and condenser effectiveness were experimentally determined for loads between 20 to 100 bulbs and the actual cycle was compared to the ideal Rankine cycle in order to determine the optimal load with the highest efficiency.</p>
+
+			<p>The experiments were performed on a 5 kW steam turbine generator in an open loop system comprised of a superheater, steam turbine, condenser, and condensate pump with steam was supplied by Lafayette College’s central steam plant boilers. Temperature, pressure, and mass flow rate were measured at specific points in the cycle. The experimental schematic and locations of the instrumentation are illustrated in Figure 2.</p>
+
+			<center>
+				<img width =  "799" src ="..\img\project-steam-turbine-img\instrumentation.jpg"  align = "center"/>
+			</center>
+
+			<h4>Figure 2: Experimental Steam Turbine Schematic with Instrumentation Locations: Type-T Thermocouples, Ashcroft Type 1009SW Pressure Gauges, and 1” Cooling Water Flow Meter [White C.]</h4>
+
+			<h3>Results and Discussion</h3>
+
+			<p>The following experiment was considered: Resistive load cases of 20, 60, and 100 light bulbs at a steam turbine output shaft rotational speed of 3658 RPM at no load.</p>
+
+			<p>The steam turbine system was prepared according to the startup procedure in the Operating Instructions at a laboratory temperature of 26.4&deg;C and barometric pressure of 99.9 kPa [3]. The steam turbine inlet valve was used to slowly increase the mass flow rate of the superheated steam in order to warm up the turbine blades to prevent damage until a rotational speed of 3658 RPM was achieved. Loading was incremented in sets of 10 bulbs to achieve the loading cases of 20, 60, and 100 via the generator in order to observe the variation in turbine efficiency between low to high loadings. At the locations illustrated in Figure 2, temperature, pressure, and mass flow rate were measured 3 times for each load case to confirm that the system had reached steady state, defined by minimal changes between measurements sets. Steam condensate flow rate was measured for each case with a weigh tank and stopwatch, resulting in flow rates of 50.3, 71.1, and 109.6 g/s respectively. The work and heat transfer were determined using Eqs. (2-5) and T-s diagrams for each load case were generated using Matlab and XSteam for the ideal and actual steam turbine cycles in Figures 3-6. The turbine efficiencies for the 20, 60, and 100 load cases were 36.7&#177;1.1%, 59.9&#177;2.6%, and 58.8&#177;3.9% respectively. In addition, the cycle efficiencies and condenser effectiveness were determined using Eqs. (9 & 10) and are displayed in Table 1.</p>
+
+			<center>
+				<img width =  "678" src ="..\img\project-steam-turbine-img\20bulb.jpg"  align = "center"/>
+			</center>
+			<center>
+				<img width =  "676" src ="..\img\project-steam-turbine-img\60bulb.jpg"  align = "center"/>
+			</center>
+			<center>
+				<img width =  "675" src ="..\img\project-steam-turbine-img\100bulb.jpg"  align = "center"/>
+			</center>
+
+			<h4>Figure 3: (a) 20, (b) 60, and (c) 100 Bulb Loading Temperature-Entropy Diagrams for the Ideal Rankine Cycle (purple) and Actual Steam Turbine Cycle (blue)</h4>
+
+			<p>Based on the T-s curves for the ideal Rankine cycle and the actual steam plant cycle displayed in Figures 3-5, it is evident that there are some deviations between the two cycles. This is attributed to the additional components in the actual cycle as well as the irreverabilities within the steam turbine. The experimental set up was not a true Rankine cycle because it was an open loop system that did not direct the condensed steam to the feed water pump and boiler. Therefore in order to model the actual cycle, the pump and boiler processes were predicted based on ideal cycle assumptions. It was assumed that the feed water pump was an isentropic device and there was no work applied or pressure losses during the boiling process. Steam is delivered to the system from the boiler at the College steam plant where it passes through a separator, which ensures that the steam entering the super heater is a saturated vapor through a centrifugal process. The steam enters the super heater where the temperature of the steam increases until the steam becomes a superheated vapor between stages 1 and 2. After the superheater, the steam enters the turbine inlet valve between stages 2 and 3 where there is a decrease in temperature due to friction and heat loss to the environment. Between stages 3 and 4 the superheated steam flows through the inlet valve which acts as a throttling device and results in an isenthalpic pressure drop. The most significant difference between the cycles is visible in the steam turbine between points 4 and 5. This is a result of the irreversabilities within the turbine as the steam flow results in friction in the interior of the turbine resulting in heat generation that is lost to the surroundings. This is most evident as loading increases because mass flow rises and the irreverabilities within the turbine are magnified, since the mass flow of steam must increase to maintain the turbine output shaft at approximately 3600 RPM. The more bulk fluid motion flow through the turbine results in more friction occurring between components. In addition as the mass flow rate increased, the pressure drop across the turbine inlet valve decreased. At the 100 bulb load case, the pressure of the condenser decreased due to the high flow rate exiting the turbine. Unlike the Rankine cycle, where the steam condenses to a mixture within the turbine, the actual cycle ensures that the steam leaves the turbine as a superheated vapor to prevent any damage to the turbine from condensation. Minor irreverabilities are present throughout the actual cycle resulting from piping losses within the boiler at stages 11 and 1, as well as within the condenser between stages 7 and 8. The turbine efficiency and thermal cycle efficiency were evaluated and compared based on the loadings applied to the turbine output shaft.</p>
+
+			<p>It was observed that turbine efficiency increased rapidly until the 60 bulb load, after which the efficiency plateaued and began to decrease slightly at higher loads, which is consistent with the calibration data for the 5K VA generator. Based on Table 1, turbine efficiency increased rapidly between the 20 and 60 bulb loadings. Beyond the 60 bulb loading, efficiency remained at a plateau region where it steadily decreased as displayed by the 100 load case. Cycle thermal efficiency is limited only by the high heat of vaporization of the working fluid and increased regardless of the loading. This is because cycle thermal efficiency is only dependent on the ratio between the power output and the heat transferred into the system by the boiler, which are unaffected by the turbine output shaft loading. The power is being generated based on the thermal energy of the fluid and does not take into account the actual turbine blades upon which entropy is generated resulting in a lower effectiveness. The efficiency of the turbine is the result of irreversabilities present within the turbine due to the interaction between the working fluid and inside of the turbine resulting in heat generation from friction. The uncertainties for the turbine efficiency were below 4%, however they were significantly high for the cycle thermal efficiency at approximately 0.6%. This is attributed to the prediction of the boiler heat transfer which was estimated based on the ideal Rankine cycle. As a result, the estimation did not provide an accurate approximation of the cycle thermal efficiency.</p>
+
+			<p>The condenser effectiveness was primarily influenced by the mass flow rate of the steam condensate. The steam condensate increased for higher loadings and therefore due to the high flow rates, the rate of heat transfer in the condenser increased between cooling water and the condensing steam. This resulted in an increase in the condenser effectiveness of the heat exchanger as displayed in Table 1. The uncertainties for each of the loading cases were below 0.0205 for the condenser effectiveness and therefore were insignificant.</p>
+
+			<center>
+				<img width =  "700" src ="..\img\project-steam-turbine-img\table.jpg"  align = "center"/>
+
+				<h4>Table 1: Actual Steam Turbine Efficiency, Cycle Thermal Efficiency, and Condenser Effectiveness for Each Load</h4>
+			</center>
+
+			<h3>Conclusions</h3>
+
+			<p>The purpose of this experiment was characterize the performance of the steam turbine by determining the effect of variable loadings on the steam turbine cycle. Though the conservation of energy and the generator efficiency correlation, the turbine efficiency, cycle efficiency, and condenser effectiveness were determined. The uncertainties for the turbine efficiency were below 4%, significantly high for the thermal efficiency around 0.6% and below 0.0205 for the condenser effectiveness. While cycle efficiency was low with a high uncertainty, this is attributed to the prediction of the boiler heat transfer. Based on the experiments it was determined that the 60 bulb load was the optimal loading, since it achieved a thermal turbine efficiency of 59.9&#177;2.6%. This was the loading at which the efficiency curve began to plateau, whereas for the 100 bulb loading, the turbine efficiency began to decrease. Therefore the steam turbine operates at maximum efficiency at a loading of 60 bulbs.</p>
+
+			<h3>References</h3>
+
+			<ol>
+				<li>U.S. Energy Information Administration - EIA - Independent Statistics and Analysis. (n.d.). Retrieved March 10, 2015, from http://www.eia.gov/forecasts/aeo/MT_electric.cfm</li>
+				<li>Ҫengel, T.A. and Boles, M.A. (2002) Thermodynamics: An Engineering Approach, McGraw Hill, 4th Edition.</li>
+				<li>Rossmann, T., Sabatino, D. & Utter B. (2015). ME 475: Steam Turbine Generator Laboratory Description. Easton, PA: Lafayette College.</li>
+			</ol>
+			
+</section>     
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='https://www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

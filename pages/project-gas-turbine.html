@@ -1,0 +1,667 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Chris's Website</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+	
+</head>
+<section>
+	<div id = "main"><!-- user defined tag-->
+		<!--http://learn.shayhowe.com/html-css/positioning-content/ how to position and group content-->
+		<h1>Welcome to Chris's Website</h1>
+		<img height =  "120" width="800" src ="../img/banner.jpg" align = "center" /><!-- insert banner image-->
+	</section>
+	<body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+            <!-- Menu Code Goes Here -->
+            <section>
+            	<div id="wrap">
+            		<ul class="navbar">
+            			<li>
+            				<a href="../index.html">Home</a>
+            			</li>
+            			<li>
+            				<a href="#">Engineering</a>
+            				<ul>
+            					<li>
+            						<a href="#">Project 1</a>
+            					</li>
+            					<li>
+            						<a href="#">Project 2</a>
+            					</li>
+            					<li>
+            						<a href="#">Project 3</a>
+            					</li>
+            				</ul>         
+            			</li>
+            			<li>
+            				<a href="#">Programming</a>
+            				<ul>
+            					<li>
+            						<a href="#">Project 1</a>
+            					</li>
+            					<li>
+            						<a href="#">Project 2</a>
+            					</li>
+            					<li>
+            						<a href="#">Project 3</a>
+            					</li>
+            				</ul>         
+            			</li>
+            			<li>
+            				<a href="#">Music</a>
+            			</li>
+            			<li>
+            				<a href="../data/resume/resume.txt">Resume</a>
+            			</li>
+            			<li>
+            				<a href="#">Places I've been</a>
+            			</li>
+            		</ul>
+            	</div>
+            </section>
+            <div id = "secondary" >
+            	<section>
+            		<!-- Code Goes Here. -->
+            		<h2>Project 3:</h2>
+            		<h2>Experimental Analysis of Gas Turbine Performance</h2>
+
+            		<h3>Abstract</h3>
+            		<p>Airplanes primarily utilize gas turbine engines to generate thrust by transferring thermal energy from fuel into a working gas in order to extract mechanical work via turbine blades. Since aircraft operate at different altitudes, the engine performs differently the various pressures. Therefore gas turbine manufacturers want to increase the performance of an engine so that it operates optimally at certain application altitudes. The purpose of this experiment was to determine the optimal shaft rotation speed ranges to achieve the maximum engine efficiency of the individual components and the entire cycle for a SR-30 Minilab gas turbine engine. Pressure, temperature, shaft rotational speed, fuel flow, and thrust were measured for the cases between idle and full throttles, resulting in the following rotational speeds of 42,493 to 77,067 RPM in order to explore the effect of rotational speed on performance. The performance of the components is characterized through the efficiencies for the compressor, turbine, nozzle, and combustor. The performance of the engine cycle is characterized by the cycle efficiency (CE), specific thrust (ST), thrust specific fuel consumption (TSFC), power match (PM), and propulsive efficiency (PE). The experimental results were compared to the theoretical thrust, ST and TSFC. It was determined that the gas turbine engine operated most optimally at the middle throttle case at 66,590 RPM producing a thrust of 41.04&#177;0.42 N. This resulted in compressor, turbine, nozzle, and combustor efficiencies of 57.4&#177;0.1%, 50.5&#177;0.1%, 103.1&#177;0.08% and 757.3% respectively. The values for CE, ST, TSFC, PM, and PE are 11.1&#177;0.03%, 29.54 N , 223.2 s/m, 62.4&#177;1.0% and 6.11&#177;0.2% respectively.</p>
+
+            		<h3>Introduction and Methods</h3>
+            		<p>According to the National Oceanic and Atmospheric Administration, there are more than 87,000 flights take place in United States airspace daily, with air traffic controllers handling approximately 64 million takeoffs and landings every year [1]. In order to transport these people and cargo to their intended destinations, planes rely on gas turbine engines in a variety of forms such as turbojets, turbofans, and turbo props. Therefore it become more important to design compact, lightweight, and reliable gas turbine engines to supply this demand. Gas turbine engines can be analyzed using the idealized Brayton cycle, comprised of four main components: the compressor, combustion chamber, turbine, and nozzle without internal irreversabilities. The schematic and the T-s diagram of the Brayton cycle are illustrated in Figures 1 and 2; each component is analyzed using the steady-flow energy equation, expressed as</p>
+
+            		<style>
+            		table.numbered-equation { width:99%;  text-align: center; vertical-align: middle;
+            			margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+            			td.equation-number { text-align:right; width:2em; }
+            			</style>
+
+            			<table class="numbered-equation" cellpadding="0" cellspacing="0">
+            				<tr>
+            					<td>
+            						(<i>q<sub>in</sub> - q <sub>out</sub>
+            					</i>) -
+            					(<i>w<sub>in</sub> - w <sub>out</sub>
+            				</i>)
+            				= <i>h<sub>e</sub> - h <sub>i</sub>&nbsp; &nbsp; (kJ/kg)
+            			</i> 
+            		</td>
+            		<td class="equation-number">(1)
+            		</td>
+            	</tr>
+            </table>
+
+            <h6>where <i>q</i> is heat transfer, <i>w</i> is the work, and <i>h</i> is the enthalpy at the exit and inlet of the control volume. These components can be analyzed under the assumption that air behaves as a perfect gas, friction is negligible and the compression and expansion processes are fully reversible and isentropic.</h6>
+			<center>
+			<br>
+            <img width =  "330" src ="..\img\project-gas-turbine-img\schematic.jpg"/>
+			
+            <h4>
+            	Figure 1: Brayton Cycle Schematic of Gas Turbine Engine [2] Reproduced by White C.
+            </h4>
+			</center>
+			
+            <p>The ideal Brayton cycle is illustrated in Figure 2 begins with process 1-2 as air is drawn into compressor, resulting in an increase in pressure isentropically. Heat is transferred isobarically in process 2-3 as the compressed air flows in combustion chamber via combustion of fuel. The expanding heated air flows across turbine blades transferring thermal energy into kinematic energy to rotate the blades, providing work to drive the compressor isentropically in process 3-4. After exiting the turbine, the depleted fuel mixture passes through the nozzle at process 4-5 insentropically resulting in a pressure drop as the velocity of the gas is increased, producing thrust. Heat is rejected isobarically in process 5-1 as the exhaust gas enters the environment. A diffuser is found on actual gas turbine engines to slow down the air mass flow rate.</p>
+
+            <center>
+            	<img width =  "421" src ="..\img\project-gas-turbine-img\ts.jpg"  align = "center"/>
+				 <h4>
+            	Figure 2: Brayton Cycle T-s Diagram of Gas Turbine Engine [2] Reproduced by White C.
+            </h4>
+            </center>
+           
+			<p>Due to irreversabilities throughout the actual gas turbine engine, there is a reduction in performance resulting in the compressor, turbine, nozzle, and combustor being evaluated through efficiencies expressed as</p>
+			
+			
+			
+            <style>
+            td.upper_line { border-top:solid 1px black; }
+            table.fraction { text-align: center; vertical-align: middle;
+            	margin-top:0.5em; margin-bottom:0.5em; line-height: 2em; }
+            	td.equation-number { text-align:right; width:2em; }
+
+            	</style>
+
+
+            	<!--How do do a fraction equation with the equation number aligned-->
+
+
+            	<table class="display" cellpadding="0" cellspacing="0" width="100%">
+            		<tr>
+            			<td class="blank">&nbsp;</td>
+            			<td class="expression">
+            				<!--start of custom code-->
+            				<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+            					<tr>
+
+            						<td rowspan="2" nowrap="nowrap">
+            							<i>&#951;<sub>comp</sub>
+            							</i>  = &nbsp;  
+            						</td>
+            						<td nowrap="nowrap">
+            							<i>h<sub>0<sub>2s</sub>
+            							</sub>
+            						</i> - <i>h<sub>0<sub>1</sub>
+            					</sub>
+            				</i>
+            			</td>
+            		</tr>
+            		<tr>
+            			<td class="upper_line">
+            				<i>h<sub>0<sub>2</sub>
+            				</sub>
+            			</i> - <i>h<sub>0<sub>1</sub>
+            		</sub>
+            	</i>
+            </td>
+
+        </tr>
+
+        <!--End of custom code-->	
+    </table>
+</td>
+<td class="eqnnumber" align="right">
+	(2)
+</td>
+</tr>
+</table>
+<!-- End of How do do a fraction equation with the equation number aligned-->
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>turb</sub>
+						</i>  = &nbsp;  
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>4</sub>
+						</sub>
+					</i> - <i>h<sub>0<sub>3</sub>
+				</sub>
+			</i>
+		</td>
+	</tr>
+	<tr>
+		<td class="upper_line">
+			<i>h<sub>0<sub>4s</sub>
+			</sub>
+		</i> - <i>h<sub>0<sub>3</sub>
+	</sub>
+</i>
+</td>
+
+</tr>
+
+<!--End of custom code-->	
+</table>
+</td>
+<td class="eqnnumber" align="right">
+	(3)
+</td>
+</tr>
+</table>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>nozz</sub>
+						</i>  = &nbsp;  
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>4</sub>
+						</sub>
+					</i> - <i>h<sub>5</sub>
+				</i>
+			</td>
+		</tr>
+		<tr>
+			<td class="upper_line">
+				<i>h<sub>0<sub>4</sub>
+				</sub>
+			</i> - <i>h<sub>5<sub>s</sub>
+		</sub>
+	</i>
+</td>
+
+</tr>
+
+<!--End of custom code-->	
+</table>
+</td>
+<td class="eqnnumber" align="right">
+	(4)
+</td>
+</tr>
+</table>	
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>comb</sub>
+						</i>  = &nbsp;  
+					</td>
+					<td nowrap="nowrap">
+						(1 + <i>f</i>)<i>h<sub>0<sub>3</sub>
+					</sub>
+				</i> - <i>h<sub>0<sub>2</sub>
+			</sub>
+		</i>
+	</td>
+</tr>
+<tr>
+	<td class="upper_line">
+		<i>f&nbsp;&#215;&nbsp;Q<sub>Jet A</sub>
+		</i>
+	</td>
+
+</tr>
+
+<!--End of custom code-->	
+</table>
+</td>
+<td class="eqnnumber" align="right">
+	(5)
+</td>
+</tr>
+</table>	
+
+<h6>where <i>f</i> = <i>
+	<sup>m<sub>fuel</sub>
+	</sup>&frasl;<sub>m<sub>air</sub>
+</sub>
+</i> and <i>Q<sub>Jet A</sub>
+</i> is the heat of combustion for the jet fuel [4]. </h6>					
+<p>The overall performance of the thermodynamic gas turbine engine cycle is characterized using the CE, ST, TSFC, PM, and PE. CE is the overall performance of the Brayton cycle through the ratio of the heat exiting and entering the system expressed as</p>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>&#951;<sub>cycle</sub>
+						</i>  =   1 - &nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						<i>h<sub>0<sub>5</sub></sub>
+						</i> - <i>h<sub>0<sub>1</sub>
+
+					</i>
+				</td>
+			</tr>
+			<tr>
+				<td class="upper_line">
+					<i>h<sub>0<sub>3</sub>
+					</i> - <i>h<sub>0<sub>2</sub>
+				</td>
+
+			</tr>
+
+			<!--End of custom code-->	
+		</table>
+	</td>
+	<td class="eqnnumber" align="right">
+		(6)
+	</td>
+</tr>
+</table>
+
+
+<p>PE is the proportion of mechanical energy actually used to propel the aircraft by accounting for aerodynamic drag, gravity, and acceleration losses, expressed as</p>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i> &#951; <sub>prop</sub>
+						</i>  =&nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						<i>Thrust</i>&nbsp; &#215;&nbsp; <i>V<sub>1</sub>
+
+					</i>
+				</td>
+			</tr>
+			<tr>
+				<td class="upper_line">
+					(<i>m<sub>air</sub></i> - <i>m<sub>fuel</sub>)(<i>h<sub>0<sub>5</sub> </i> - <i>h<sub>5</i>) - <i>m<sub>air</sub></i> (<i>h<sub>0<sub>1</sub> </i> - <i>h<sub>1</i>)
+
+				</td>
+
+			</tr>
+
+			<!--End of custom code-->	
+		</table>
+	</td>
+	<td class="eqnnumber" align="right">
+		(7)
+	</td>
+</tr>
+</table>	
+
+<p>PM characterizes the performance of both the compressor and turbine while accounting for the irreversalities found in both devices, expressed as</p>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>PM</i>  = &nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						
+						(<i>m<sub>air</sub></i> - <i>m<sub>fuel</sub>)(<i>h<sub>0<sub>5</sub></sub></i> - <i>h<sub>0<sub>1</sub></i>)
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>h<sub>0<sub>3</sub>
+						</i> - <i>h<sub>0<sub>2</sub>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+			(8)
+		</td>
+	</tr>
+</table>
+
+<p>ST is an indication of the engine efficiency as the ratio between the engine thrust and the mass flow of the air through the engine, expressed as</p>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>T<sub>s</sub></i>  = &nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						
+						<i>Thrust</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						<i>m<sub>air</sub></i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+			(9)
+		</td>
+	</tr>
+</table>
+
+<p>TSFC represents the amount of fuel consumed by the engine relative to the engine thrust output during operation, expressed as</p>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>TSFC</i>  = &nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						
+						<i>m<sub>air</sub></i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						
+						<i>Thrust</i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+			(10)
+		</td>
+	</tr>
+</table>
+
+<p>Using a control volume analysis of the gas turbine, the performance can be evaluated for an increase in velocity and air/fuel ratio through the theoretical thrust, ST, and TSFC, expressed as</p>
+
+<table class="numbered-equation" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<i>T<sub>theory</sub></i> = <i>m<sub>air</sub></i> (1 + <i>f</i>)<i>V<sub>5</sub></i> - <i>m<sub>air</sub></i><i>V<sub>1</sub></i>
+		</td>
+		<td class="eqnnumber" align="right">
+			(11)
+		</td>
+	</tr>
+</table>
+
+
+<table class="numbered-equation" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<i>T<sub>S<sub>theory</sub></i></sub> =  (1 + <i>f</i>)<i>V<sub>5</sub></i> - <i>V<sub>1</sub></i>
+		</td>
+		<td class="eqnnumber" align="right">
+			(12)
+		</td>
+	</tr>
+</table>
+
+<table class="display" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+		<td class="blank">&nbsp;</td>
+		<td class="expression">
+			<!--start of custom code-->
+			<table class="fraction" align="center" cellpadding="0" cellspacing="0">
+				<tr>
+
+					<td rowspan="2" nowrap="nowrap">
+						<i>TSFC<sub>theory</sub></i>  = &nbsp; 
+					</td>
+					<td nowrap="nowrap">
+						
+						<i>f</i>
+					</td>
+				</tr>
+				<tr>
+					<td class="upper_line">
+						
+						(1 + <i>f </i>)<i>V<sub>5</sub></i> - <i>V<sub>1</sub></i>
+					</td>
+
+				</tr>
+
+				<!--End of custom code-->	
+			</table>
+		</td>
+		<td class="eqnnumber" align="right">
+			(13)
+		</td>
+	</tr>
+</table>
+
+<p>In the current study, the efficiencies for the compressor, turbine, nozzle, and combustor as well as the CE, ST, TSFC, PM, and PE were experimentally determined for the gas turbine engine at idle, low, middle, and full throttles. The experimental data was compared to the idealized Brayton cycle in order and the theoretical thrust, ST and TSFC to validate the experimental process.</p>
+
+<p>The experiments were performed on an instrumented SR-30 Minilab gas turbine engine while measuring pressure, temperature, shaft rotational speed, fuel flow, and thrust at rotational speeds between 42,493 and 77,067 RPM. The experimental schematic and locations of the instrumentation are illustrated in Figure 3.</p>
+
+
+<center>
+	<img width =  "535" src ="..\img\project-gas-turbine-img\diagrams.jpg"  align = "center"/>
+</center>
+	<h4>
+	Figure 3: Experimental SR-30 Minilab Gas Turbine Engine with Instrumentation Locations: Thermocouples, Pressure Transducers, Optical Encoder for RPM, and Flowmeter for Fuel Flow Rate [White C.]
+</h4>
+
+<h3>Results and Discussion</h3>
+
+<p>The following experiments were considered: (1) idle at 42,493 RPM, (2) low throttle at 53,676 RPM, (3) middle throttle at 66,590 RPM, and (4) full throttle at 77,067 RPM.</p>
+
+<p>The operation of the SR-30 Minilab gas turbine engine was initiated according to startup procedure in the Operating Instructions at a laboratory temperature of 25 &deg;C and barometric pressure of 101.4 kPa [3]. For each throttle case, the fuel intake valve was adjusted to the corresponding throttle position, where it remained until the gas turbine reached steady state. Steady state was defined to be when the fluxuations in shaft speed fluctuations were within &#177;50 RPM. The T-s diagrams for the actual land ideal cycles were generated for each throttle case in Figure 4. The efficiencies for the 300 compressor, turbine, nozzle, and combustor were determined as well as the CE, ST, TSFC, PM, and PE for idle, low, middle, and full throttles displayed in Figure 5. The experimentally determined values were compared to the theoretical thrust, ST, and TSFC displayed in Figure 5d.</p>
+
+<center>
+<img width =  "450" src ="..\img\project-gas-turbine-img\idle.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "481" src ="..\img\project-gas-turbine-img\middle.jpg"  align = "center"/>
+</center>
+<center>
+<img width =  "445" src ="..\img\project-gas-turbine-img\full.jpg"  align = "center"/>
+<h4>
+	Figure 4: T-s Diagram of Gas Turbine Engine for (a) Idle (b) Middle (c) Full Throttle Cases
+</h4>
+
+</center>
+
+<p>The T-s curves for each throttle case are displayed in Figure 4. As
+	throttle increases, the temperature at the entrance of the combustor, turbine
+	inlet, and increases in respect to throttle, resulting in an increase in the power generated during turbine process. The exhaust region remains consistent for
+	each case regardless of throttle position, since these process occurs at constant pressure of atmosphere. The deviations from the Brayton cycle in the actual
+	cycle are evident at the compressor and turbine due to irreversabilities in the processes resulting in entropy generation, stagnation pressure decrease in the combustor, and heat transfer from components. Due to the irreversabilites,
+	more work is required to drive the compressor than the Brayton cycle. In the experimental setup, a nozzle was used at the entrance in order to accelerate the 700
+	air flow entering the engine. In actual jet engines, diffusors are used to slow down air flow. This increases the pressure as well so the compressor requires less work to function. At higher throttles there is a higher pressure and therefore extra work is produced in the turbine and is used by the compressor and other functions in the engine. The less the pressure drop in the turbine, the more pressure available for the nozzle pressure differential resulting in greater thrust.</p>
+
+	<center>
+	<img width =  "634" src ="..\img\project-gas-turbine-img\EffTurbCompNozz.jpg"  align = "center"/>
+		<h4>
+		￼Figure 5: Turbine, Compressor, and Nozzle Efficiencies vs RPM
+	</h4>
+	</center>
+
+	<p>Figure 5 shows turbine, compressor, and nozzle efficiencies for each throttle case calculated using Eqs. (2-4). The turbine efficiency drops due to the low mass flow rate at 54,000 RPM, which means the working fluid is not providing enough power to turbine. The turbine efficiency then increases due the higher mass flow rate. Nozzle efficiency increases because the nozzle heats up and become more efficiency at higher temperatures, however at full throttle the efficiency decreases. Since the nozzle heats up, the efficiency was 103% at the middle throttle. Therefore the engine works best at medium throttles. As the loading increases, the rotational speed decreases and the amount of useful power produced increases. The compressor efficiency remains steady, and does not increase drastically throughout the full range of shaft rotational speeds. The efficiecny errors were below 0.003, indicating that the error was insignificant in affecting the result.</p>
+	
+	<center>
+	<img width =  "643" src ="..\img\project-gas-turbine-img\EffComb.jpg"  align = "center"/>
+		<h4>
+		￼Figure 6: Combustion Efficiency
+	</h4>
+	</center>
+
+	<p>Figure 6 displays combustion efficiency for each case determined using Eq. (5). It is seen that combustion efficiency increases because of the higher mass flow rate of the air entering the engine. Resulting in more overall heat transfer into the working fluid. It can be seen that at low throttles, the combustion efficiency increases at a slow rate until it reaches 54,000 RPM, where the efficiency increases drastically linearly. However the values for combustor efficiency are not correct since they yield unrealistic results.</p>
+
+	<center>
+	<img width =  "634" src ="..\img\project-gas-turbine-img\EffCyclePropPowMatch.jpg"  align = "center"/>
+		<h4>
+		￼Figure 7: Cycle Efficiency, Power Match, and Propulsion Efficiency
+	</h4>
+	</center>
+
+	<p>Figure 7 displays the CE, PM, and PE determined using Eqs. (6-8). CE increased from low throttle to 66,000 RPM, where it plateaus, displaying that the overall cycle runs optimally at 66,000 RPM. Negative cycle efficiency was displayed at idle because the engine is not self-reciprocating where the turbine can sufficiently drive the compression process. PM decreased from idle to 54,000 RPM because PM is dependent on the efficiency between the turbines shafts connected to the compressor. If the PM was equal to 1 that would mean that all the power generated in the turbine would be completely transferred without losses to the compressor through the shaft. PE remained constant at 6.6±0.08%. The reason for why this is so low is because the engine is not moving. In moving engines the propulsive efficiency would be nearly 100% when the thrust is equal to drag force. The errors for each of them were determined to be below 0.1, indicating that the error was insignificant in affecting the results.</p>
+
+	<center>
+	<img width =  "522" src ="..\img\project-gas-turbine-img\Thrust.jpg"align = "center"/>
+		<h4>
+		￼Figure 8: Experimental Thrust and Specific Thrust Comparison to Theoretical vs RPM
+	</h4>
+	</center>
+
+	<p>Figure 8 displays the experimental and theoretical thrust and specific thrust for each throttle case determined using Eqs. (9-13) it is displayed that the theoretical thrust and specific thrust predicts that the thrust produced by the engine will be much greater than the actual results. The error for the thrust was determined to be below 0.5395, indicating that the error was insignificant in affecting the results.</p>
+
+	<center>
+		<img width =  "637" src ="..\img\project-gas-turbine-img\theoreticalThrust.jpg"  align = "center"/>
+		<h4>
+		￼Figure 9: Experimental and Theoretical TSFC vs RPM
+	</h4>
+	</center>
+
+	<p>Figure 9 displays the experimental and theoretical TSFC for each throttle case determined using Eqs. (10 & 13) it is displayed that the theoretical TSFC predicts that the thrust produced by the engine will be much greater than the actual results.</p>
+
+	<h3>Conclusions</h3>
+	
+	<p>The purpose of this experiment was characterize the performance of the SR-30 Minilab gas turbine engine at various speeds. The largest errors can be attributed to the pressure transducers because they were mounted perpendicular to the flow, which resulted in inaccurate pressure measurements. The experimental results were compared to the theoretical thrust, ST and TSFC. It was determined that the gas turbine engine operated most optimally at the middle throttle case at 66,590 RPM producing a thrust of 41.04&#177;0.42 N.</p>
+
+	<h3>References</h3>
+	<ol>
+	<li>
+		<h5>Datasets | Science On a Sphere. (n.d.). Retrieved April 10, 2015, from http://sos.noaa.gov/Datasets/dataset.php?id=44</h5>
+	</li>
+	<li>
+		<h5>Ҫengel, T.A. and Boles, M.A. (2002) Thermodynamics: An Engineering Approach, McGraw Hill, 4th Edition.</h5>
+	</li>
+	<li>
+		<h5>Rossmann, T., Sabatino, D. & Utter B. (2015). ME 475: Gas Turbine Engine Laboratory Description. Easton, PA: Lafayette College.</h5>
+	</li>
+	<li>
+		<h5>Rossmann, T., Sabatino, D. & Utter B. (2015). ME 475: Gas Turbine Analysis. Easton, PA: Lafayette College.</h5>
+	</li>
+	</ol>
+</section>     
+</div>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+<script src="../js/plugins.js"></script>
+<script src="../js/main.js"></script>
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+	function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+e.src='https://www.google-analytics.com/analytics.js';
+r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+</script>
+</body>
+</html>

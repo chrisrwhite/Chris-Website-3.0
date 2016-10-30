@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Chris's Website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+			<section>
+				<div id = "main"><!-- user defined tag-->
+					<!--http://learn.shayhowe.com/html-css/positioning-content/ how to position and group content-->
+					<h1>Welcome to Chris's Website</h1>
+					<img height =  "120" width="800" src ="../img/banner.jpg" align = "center" /><!-- insert banner image-->
+				</section>
+				<section>
+					<div id="wrap">
+						<ul class="navbar">
+							<li>
+								<a href="../index.html">Home</a>
+							</li>
+							<li>
+								<a href="#">Engineering</a>
+								<ul>
+									<li>
+										<a href="#">Project 1</a>
+									</li>
+									<li>
+										<a href="#">Project 2</a>
+									</li>
+									<li>
+										<a href="#">Project 3</a>
+									</li>
+								</ul>         
+							</li>
+							<li>
+								<a href="#">Programming</a>
+								<ul>
+									<li>
+										<a href="#">Project 1</a>
+									</li>
+									<li>
+										<a href="#">Project 2</a>
+									</li>
+									<li>
+										<a href="#">Project 3</a>
+									</li>
+								</ul>         
+							</li>
+							<li>
+								<a href="#">Music</a>
+							</li>
+							<li>
+								<a href="../data/resume/resume.txt">Resume</a>
+							</li>
+							<li>
+								<a href="#">Places I've been</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<div id = "secondary" >
+					<!-- user defined tag-->
+					<section>
+						<!-- mini header for first blurb -->
+						<h2>Project 1:</h2>
+						<h2>Experimental Analysis of Flow Separation on Model Geometry</h2>
+
+						<h3>Abstract</h3>
+						<p>The geometry, surfacing, and orientation of a model has a significant effect on the behavior of fluid motion. The purpose of this experiment was to analyze the effects of flow separation for various model geometries due to variations in flow speed and model orientation with an AEROLAB Educational Wind Tunnel. The model geometry was studied by determining the coefficient of drag for 3 smooth spheres of the following diameters: 1.5in, 3in, and 4in. Model surfacing was studied by determining the coefficient of drag for the 4” sphere with turbulent trip and a standard golf ball. The effects of orientation were studied by determining the coefficient of lift and drag with a Clark-Y model at varying angles of attack. The experimental results were compared with data from several published studies.</p>
+						
+					
+						<h3>Introduction and Methods</h3>
+						<p>The geometry of an object has a significant effect on the behavior of fluid flow based on the velocity of the flow. Aerodynamics are an important part of the iterative design processes for developing products for various industries, from cars, to planes, to sports equipment. An efficient economical way of product development is by designing and testing scale models in order to determine the optimal design before scaling up. </p>
+						<p>Scale prototypes can be tested using a wind tunnel in order correlate flow behavior on scale models to a life-size model using a non-dimensionalized value called the Reynolds number. The Reynolds number characterizes the type of fluid flow based on the model geometry and flow speed and is expressed as</p>
+						<p>where is the flow velocity, L is the reference length, is the density of the fluid, and  is the viscosity coefficient with the fluid properties being approximated at the fluid temperature. The Reynolds number can be used to determine whether the fluid flow is laminar or turbulent.</p>
+						<p>The mechanics of flow across  an object can be modeled using the Newton Law model, which asserts that aerodynamic lift is the result of the angle of attack and is due to lift and drag component forces. This results in the a boundary layer on top of the wing and a downwash behind the wing which forms a pressure gradient and thus causes lift as a result of Newton’s third law. The component equations for drag and lift are expressed as</p>
+						<p>where FN is the normal force, FA is the axial force, and α is the angle of attack with respect to horizontal axis. Utilizing the dynamic pressure portion of Bernoulli’s principle equation, the lift and drag forces can be non-dimensionalized coefficients and can be expressed as</p>
+						<p>where FL, D is either lift or drag force,  is the density of air at fluid temperature, is the velocity of the air, and  is the planform area of the airfoil.</p>
+						<p>Airfoils require a different calculations for coefficients of lift and drag, since the geometry has a significant effect on the behavior of fluid flow. Using lift line theory, coefficient of lift and drag for airfoils with a theoretically infinite aspect ratio can be expressed as</p>
+						<p>where AR is the wing aspect ratio calculated using the equation  , where b is the wing span (wingtip to wingtip) and S is the planform area, is the Oswald efficiency number which is a correction factor for non-elliptical planform wings (  for elliptical wings, and for rectangular planforms.)</p>
+						<p>The pressure and velocity effects of fluid flow in the wind tunnel can be modeled using Bernoulli’s principle which accounts for the static pressure, dynamic pressure, and hydraulic head. Since the lift and drag forces are distributed over the surface area of the airfoil, they have a significant role in the mechanics of fluid flow.  The reduced Bernoulli’s equations is expressed as </p>
+						<p> where  is the static pressure, is the density of the fluid,  is velocity. It is assumed that there is no heat transfer and no work therefore no large temperature swings and it is assumed that the fluid is incompressible. In order to correlate the pressure measurements made in the wind tunnel a simplified Bernoulli’s equation can be used without the hydraulic term, which represents the total pressure or stagnation pressure which is where the local velocity of a fluid streamline is zero. Kinetic pressure of the fluid is transferred into static pressure.</p>
+						<p> The experiments were performed by applying various flow velocities on models in order to determine how geometry, surface finish and angle of attack affects lift and drag forces. It was assumed that the experiments were conducted at room temperature. Pressure was recorded using instrumentation capable of measuring perpendicular pressure to the wind tunnel interior walls. Axial and normal forces were measured using load cells mounted in the sting balance. Experimental set up displayed in Figure 1. </p>
+						<center>
+						<img height =  "150" src ="..\img\project-wind-tunnel-part-1-img\windtunneldiagram.jpg"  align = "middle"/>
+						</center>
+						<p> <sub>Figure 1:	AEROLAB Educational Wind Tunnel: (1) ENTRANCE: honeycomb attenuates parallel laminar flow, the contraction area due to Bernoulli’s equation reduces variations of mean axial velocity due to incompressible flow. Creates uniform flow, thin boundary layers, and negligible losses (2) TEST SECTION: pressure instrumentation and models are attached to a sting balance that equipped with load cells to measure axial and normal force. The sting balance can be adjusted to angles of attack between -6 and +20 degrees in respect to the horizontal axis. Data is displayed on instrumentation readouts. (3) TRANSITION REGION: fluid flow leaving test section transitions to laminar flow. (4) DRIVER: fan that drives the flow from the entrance to the exit attached to a frequency modulated electric motor. </sub></p>
+						<h3>Results and Discussion</h3>
+						<p> Three experimental set ups were considered: (1) airflow over 3 smooth spheres (diameters:  1.5”, 3”, 4”), (2) tripped airflow for 4” sphere and standard golf ball, and (3) airflow over Clark-Y airfoil model at various angle of attack.</p>
+						<p> For the airflow over the 3 spheres, the coefficient of drag was determined by measuring axial force using load cells within the sting balance at an angle of attack of zero. Using equation 2 at an angle of attack results in the complete transfer of airflow energy to axial force. The readouts were tarred to negate the effect of gravity on the models.  Axial force was measured at flow speed intervals of 2.5m/s from 0 - 45m/s and was used to determine drag force using equation 2. The drag coefficients were determined using equation 4 and are displayed in Figure 2. The results were compared to coefficient of drag for smooth spheres data published by Schlichting [5]. It was assumed that the fluid was incompressible and temperature fluctuations were minimal.</p>
+						
+						<p>The effects of transitioning to turbulent flow on coefficient of drag was determined for the 4” sphere with turbulent trip and the standard golf ball. The 4” sphere was tripped using an approximately 0.5” thick ring of tape attached to the surface of the sphere facing the entrance of the wind tunnel. The drag force was determined using equation 2 and the coefficient of drag was determined using equation 4. The resulting coefficients of drag was computed and is displayed along with the smooth spheres and Schlichting data in Figure 2. It was assumed that the fluid was incompressible and temperature fluctuations were minimal. </p>
+						<center>
+						<img height =  "400" src ="..\img\project-wind-tunnel-part-1-img\spheresdragcurves.jpg"  align = "middle"/>
+						</center>
+						
+						<p> The behavior of flow separation for the Clark-Y airfoil model was tested at 40 m/s at various orientations. Before testing began, the angle of attack was set to zero, read outs were tarred, and then the sting balance was set to an angle of attack of -6 degrees. The axial and normal forces were measured in 2 degree increments to get a full spectrum of the component forces without the loads induced by flow. These measurements were used to correct the axial and normal force data. The experiment was then conducted at 40 m/s and data was collected at 2 degree angle of attack increments from -6 to + 20 degrees in respect to the horizontal axis. Fog was emitted into the entrance of the wind tunnel using a SAFEX Fog Generator and a 1W GaN 445 nm Laser was used to enhance the visualization of the fog streamline crossections. The behavior of the fluid flow was observed and recorded for future use. Tape tips were attached to the top surface of the airfoil and it was noted that the tape tips began flapping at – 1 degrees and complete separation occurred at 20 degrees. It was also noted that it took longer for the flow to reconnect with the airfoil as it did not reconnect until the airfoil was returned to an angle of 13 degrees. </p>
+						
+						<p> Figure 2 displays the results of the smooth spheres and tripped spheres experiments compared to the data from the Schlichting smooth sphere experiment. As the diameter of the sphere increases, the coefficient of drag increases due to the increasing surface area. When airflow hits transition flow the coefficient of drag rapidly decreases until it hits turbulent flow where it stays at a steady, low coefficient of drag value. Larger spheres had more surface area and therefore achieved a larger range of higher Reynolds numbers displaying the transition to turbulence more clearly and were most similar to Schlichting data. Note that the distinct transition to turbulence can be seen for the golf ball at a Reynolds number of, whereas this is not true of the 4” tripped sphere. However it is clear that the tape had an effect since the 4” tripped sphere has a lower coefficient of drag compared to the 1.5” sphere and the smooth 4” sphere. Therefore this indicated that transition to turbulence occurred very early.  For the smooth 4” sphere, the transition to turbulence is seen occurring at a Reynolds number of  which is approximately the same point at which the Shlichting data transitions to turbulence. No major conclusions could be drawn from the 1.5” sphere at high Reynolds numbers since there is no indication of a transition. Furthermore due to the small size of the sphere, larger velocities that exceed the velocity range of the wind tunnel would be required. Further testing is required to make definitive conclusions for the 1.5” sphere and the 4” turbulent tripped sphere.</p>
+
+						<p> In order to test the validity of the smooth sphere experiment, a correlation for coefficient of drag for smooth spheres determined by Morrison [1] was used to compare the experimental data, published data, and model data. The Morrison sphere correlation was used to determine the coefficient of drag over a range of Reynolds numbers and is expressed as</p>
+						
+						<p>Where the drag coefficient and Re is is the Reynolds number. Due to the nature of the curve fit equation, the curve was identical for all sphere sizes since the equation only depends on Reynolds number. The comparison between the Morrison Correlation model and the smooth spheres is displayed in Figure 3.  This figure further shows the transition of the 4” smooth sphere and that the Schlichting data accurately follows the Morrison model. The experimental curves displays a high amount of noise and is not exactly identical to the theoretical Morrison Correlation Model. However the data follows the same trend of transitioning from laminar to turbulent flow.</p>
+
+						<p>In regards to the Clark-Y airfoil model, the resulting data required correction since equations 6 and 7 are for lifting line theory for infinite aspect ratios. Since the actual model has a finite the 2D calculations for lift and drag and the infinite aspect ratio does not capture the wing tip vortecies, the lift and drag coefficients had to be corrected. This was accomplished by using Prandtl’s lifting line theory to relate the planform area of the airfoil to 3D Lift coefficients using the following equations</p>
+						<p>Where is determined by using equation 5 with AR =  and using AR = 2.86 the 3D corrected coefficients are displayed in Figure 4. </p>
+						<p>The experimental airfoil data was compared the 4 following data sets: 3D lifting line model, NACA Data, and Xfoil for two Reynolds numbers for since the experimental data fell between both Reynolds numbers data sets. The experimental data was most similar to the NACA data, since lift force decreases at 17 degrees and the drag force begins to increase because there is a greater frontal area. More of the flow is hitting the bottom of the airfoil and is being converted into drag rather than lift force, since there is a significant surface area creating a large pressure differential. This is the same for experimental and the NACA data for drag coefficient, which both deviated from the rest of drag force profiles at 0 degrees by increasing. Note that the The 3D lift line model does not account for stalling. The experimental data and the NACA lift coefficients correlate at stalling at an angle of approximately 17 degrees. </p>
+						<center>
+						<img height =  "400" src ="..\img\project-wind-tunnel-part-1-img\airfoilliftanddragcurves.jpg"  align = "middle"/>
+						</center>
+						
+						<h3>Conclusions</h3>
+						
+						
+						<p>The purpose of this experiment was to analyze the effects of flow separation for various model geometries due to variations in flow speed and model orientation with an AEROLAB Educational Wind Tunnel. The smooth sphere coefficient of drag results as a whole were similar to the results in the Schlichting data.  Model surfacing was studied by determining the coefficient of drag for the 4” sphere with turbulent trip and a standard golf ball. Even though the 4” sphere did not display a distinct transition to turbulence, the coefficient of drag was lower than the smooth 4” sphere and the 1.5” sphere. The effects of orientation were studied by determining the coefficient of lift and drag with a Clark-Y model at varying angles of attack. Separation was observed and the coefficient of drag and lift forces were most similar to the NACA data. Recommended course of action would be to continue the wind tunnel testing to acquire more conclusive results. </p>
+						<h3>References</h3>
+						<li><p>Rossmann, T., Sabatino, D. & Utter B. (2015). ME 475: Wind Tunnel Testing I Laboratory Description. Easton, PA: Lafayette College.</p></li>
+	
+						<li><p>Rossmann, T., Sabatino, D. & Utter B. (2015). 3-D Lift Theory ME 475: Thermo-Fluids Lab. Easton, PA: Lafayette College.</p></li>
+	
+						<li><p>Higgins, G.J., "The characteristics of the N.A.C.A 97, Clark Y, and N.A.C.A. M6 airfoils with particular reference to the angle of attack", NACA TN 270, Dec 1927.</p></li>
+		
+						<li><p>Drela, M., XFOIL: An Analysis and Design System for Low Reynolds Number Airfoils, Conference on Low Reynolds Number Airfoil Aerodynamics, in Lecture Notes in Engineering, Volume 54, 1989, pp 1-12.</p></li>
+	
+						<li><p>Schlichting, H., & Kestin, J. (1979). Boundary-layer Theory (7.th ed.). New York, NY: McGraw-Hill.</p></li>
+
+
+						<center>
+						<a href="#top">Go to top</a>
+						</center>
+					</section>
+				</div>
+			</div>
+		</body>
+	</html>
